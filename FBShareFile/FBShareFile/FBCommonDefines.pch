@@ -1,0 +1,37 @@
+//
+//  FBCommonDefines.pch
+//  FBShareFile
+//
+//  Created by 张学阳 on 2018/5/8.
+//  Copyright © 2018年 Gary. All rights reserved.
+//
+
+#ifndef FBCommonDefines_pch
+#define FBCommonDefines_pch
+
+#pragma mark - 变量-布局相关
+
+// bounds && nativeBounds / scale && nativeScale
+#define ScreenBoundsSize ([[UIScreen mainScreen] bounds].size)
+#define ScreenNativeBoundsSize ([[UIScreen mainScreen] nativeBounds].size)
+#define ScreenScale ([[UIScreen mainScreen] scale])
+#define ScreenNativeScale ([[UIScreen mainScreen] nativeScale])
+
+
+
+// 是否横竖屏
+// 用户界面横屏了才会返回YES
+#define IS_LANDSCAPE UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation])
+// 无论支不支持横屏，只要设备横屏了，就会返回YES
+#define IS_DEVICE_LANDSCAPE UIDeviceOrientationIsLandscape([[UIDevice currentDevice] orientation])
+
+// 屏幕宽度，会根据横竖屏的变化而变化
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+
+// 屏幕宽度，跟横竖屏无关
+#define DEVICE_WIDTH (IS_LANDSCAPE ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width)
+// 屏幕高度，会根据横竖屏的变化而变化
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+
+
+#endif

@@ -1,0 +1,6 @@
+framework module Pods_FBShareFile {
+  umbrella header "Pods-FBShareFile-umbrella.h"
+
+  export *
+  module * { export * }
+}

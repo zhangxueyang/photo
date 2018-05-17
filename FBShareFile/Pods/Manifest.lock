@@ -1,0 +1,28 @@
+PODS:
+  - FBShareSandbox (0.1.0)
+  - GCDWebServer (3.4.2):
+    - GCDWebServer/Core (= 3.4.2)
+  - GCDWebServer/Core (3.4.2)
+  - GCDWebServer/WebDAV (3.4.2):
+    - GCDWebServer/Core
+  - GCDWebServer/WebUploader (3.4.2):
+    - GCDWebServer/Core
+
+DEPENDENCIES:
+  - FBShareSandbox (~> 0.1.0)
+  - GCDWebServer (~> 3.0)
+  - GCDWebServer/WebDAV (~> 3.0)
+  - GCDWebServer/WebUploader (~> 3.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - FBShareSandbox
+    - GCDWebServer
+
+SPEC CHECKSUMS:
+  FBShareSandbox: e8c07d6fc133dd9ac58ce48a3eeed87c09151407
+  GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
+
+PODFILE CHECKSUM: 3b22f2c80f3de8adda053b1132ceef2eedddd0b5
+
+COCOAPODS: 1.5.0
